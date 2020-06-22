@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 18px;
+}
+
+section {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*=====Home=====*/
+
+#home {
+    background-image: url('img/room1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+    min-height: 100vh;
+}
+
+.overlay .home-text {
+    color: #fff;
+    transform: translate(-50%, 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.home-text h1 {
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.home-text h4 {
+    letter-spacing: 2px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logo {
+    margin: auto 20px;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    background: #2de8e9;
+}
+
+.nav-top .nav-contact {
+    margin-left: 20px;
+}
+
+.nav-top .nav-social {
+    margin-right: 20px;
+}
+
+.nav-top i {
+    padding: 0 10px;
+}
+
+
+/*Navigation*/
+
+.logo {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.logo span {
+    color: #d4ae2f;
+}
+
+.nav-buttom {
+    display: flex;
+    justify-content: space-between;
+    min-height: 7vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    background: #000;
+}
+
+.nav-buttom .nav-menu {
+    list-style: none;
+    margin: auto;
+}
+
+.nav-menu .nav-link {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.nav-menu .nav-link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.burger {
+    cursor: pointer;
+    margin: auto 20px;
+    display: none;
+}
+
+.burger>div {
+    background: #fff;
+    width: 25px;
+    height: 3px;
+}
+
+.one,
+.two {
+    margin-bottom: 5px;
+}
+
+
+/*=====About=====*/
+
+#about {
+    background: url('img/balcony.jpg');
+    background-size: cover;
+}
+
+#about .overlay {
+    background: rgba(253, 253, 253, 0.8);
+}
+
+#about .title h3 {
+    font-size: 1.5em;
+}
+
+#about .title h4 {
+    font-size: 1.2em;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.about-text {
+    width: 100%;
+    background: #d4ae2f;
+    height: 100%;
+    line-height: 1.4;
+    padding: 0 20px;
+    padding-bottom: 0.6em;
+}
+
+.about-img {
+    width: 100%;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+
+/*=====Room=====*/
+
+.rooms {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box-room {
+    width: 25%;
+    padding: 20px;
+}
+
+.room-type {
+    z-index: 3;
+    transform: translate(5%, -150%);
+    top: 50%;
+    left: 50%;
+}
+
+.room-type p {
+    color: #fff;
+    font-weight: 700;
+}
+
+.room-img {
+    width: 100%;
+    z-index: 0;
+    transition: all .7s ease;
+}
+
+.room-img:hover {
+    padding: 10px;
+}
+
+.box-room img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.room-text {
+    background: lightgray;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    top: 0;
+    padding: 10px 0;
+    margin-top: -30px;
+}
+
+.room-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.room-text a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+
+/*=====Services=====*/
+
+#services {
+    padding: 30px 0;
+    background: #eaeaea;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+.service-box {
+    width: 20%;
+    margin: 20px 5px;
+    padding: 20px 10px;
+    border: 1px solid gray;
+    background: #fff;
+}
+
+.service-box i {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px 0;
+    color: #d4ae2f
+}
+
+.service-box h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/*=====Team=====*/
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.box-team {
+    width: 25%;
+    padding: 20px;
+}
+
+.team-img {
+    width: 100%;
+}
+
+.box-team img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-tags {
+    font-size: 1em;
+    text-align: center;
+}
+
+.team-tags .name {
+    font-size: 1.2em;
+}
+
+.team-tags .position {
+    font-size: 1em;
+}
+
+
+/*=====Contact=====*/
+
+#contact {
+    background: url('img/queen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact .overlay {
+    background: rgba(0, 0, 0, .5);
+    min-height: 70vh;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto;
+}
+
+#contact .title {
+    color: #fff;
+}
+
+.contact-list {
+    width: 100%;
+}
+
+.contact-list i {
+    color: #fff;
+}
+
+.contact-list a {
+    color: #fff;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.phone,
+.address,
+.email {
+    display: flex;
+}
+
+.phone i,
+.address i,
+.email i {
+    margin-right: 10px;
+    padding: 15px 5px;
+    font-size: 1.6em;
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.value a {
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 6vh;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    height: 7vh;
+    margin: 20px 0;
+    background: #000;
+    color: #d4ae2f;
+    font-size: 1.5em;
+}
+
+
+/*=====Footer=====*/
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #373737;
+}
+
+.footer .title {
+    color: #fff;
+}
+
+.first-list ul,
+.second-list ul {
+    list-style: none;
+}
+
+.first-list ul li,
+.second-list ul li {
+    padding: 5px 0;
+}
+
+.first-list ul li a,
+.second-list ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-media {
+    margin: auto 0;
+}
+
+.social-icons {
+    margin-top: 20px;
+    margin: auto;
+}
+
+.social-icons i {
+    padding: 0 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.sub-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background: #283339;
+    color: #fff;
+}
+
+.sub-footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*======Media Query=====*/
+
+@media (min-width:651px) and (max-width:900px) {
+    .burger {
+        display: block;
+    }
+    nav .nav-menu {
+        position: fixed;
+        background: #000;
+        width: 100%;
+        top: 7%;
+        display: none;
+    }
+    .nav-menu.show {
+        display: block;
+    }
+    nav .nav-menu .nav-link {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-room {
+        width: 40%;
+    }
+    .service-box {
+        width: 40%;
+    }
+    .box-team {
+        width: 40%;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .second-list ul {
+        padding-left: 35px;
+    }
+}
+
+@media (min-width:200px) and (max-width:650px) {
+    .burger {
+        display: block;
+    }
+    nav .nav-menu {
+        position: fixed;
+        background: #000;
+        width: 100%;
+        top: 7%;
+        display: none;
+    }
+    .nav-menu.show {
+        display: block;
+    }
+    nav .nav-menu .nav-link {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-room {
+        width: 90%;
+    }
+    .service-box {
+        width: 80%;
+    }
+    .team {
+        display: flex;
+        flex-direction: column;
+    }
+    .box-team {
+        width: 90%;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
